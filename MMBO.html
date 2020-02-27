@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #333;
+}
+
+.main img {
+    background-color: #1a1a1a;
+}
+
+.nav {
+    display: flex;
+    background-color: #3333;
+    color: white;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.nav img {
+    height: 70px;
+    width: 80px;
+}
+
+.nav2 ul li {
+    list-style-type: none;
+    display: inline-flex;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    background-color: none;
+    border-color: #3333;
+}
+
+
+.nav2 button {
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    height: 40px;
+    width: auto;
+}
+
+.nav2 {
+    flex: 3;
+    text-align: end;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+}
+
+#imge {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.images img {
+    height: 300px;
+    width: 400px;
+    margin-left: 20px;
+
+}
+
+.images {
+    display: flex;
+    text-align: center;
+}
+
+.images2 img {
+    height: 300px;
+    width: 420px;
+    margin-left: 10px;
+}
+
+.images2 {
+    display: flex;
+}
+
+.images3 {
+    display: flex;
+    text-align: center;
+}
+
+.images3 img {
+    height: 330px;
+    width: 330px;
+}
+
+.globe {
+    background-image: url("6403920_preview.png");
+    background-repeat: no-repeat, repeat;
+    background-blend-mode: lighten;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+
+.globe h4 {
+    margin-left: -60px;
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.globe h5 {
+    margin-left: -60px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+
+.logo ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 15px;
+}
+
+span#leftarrow {
+    bottom: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+#glyphicon {
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.logo img {
+    height: 80px;
+    width: 70px;
+}
+
+.range {
+    display: flex;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.slid {
+    flex: 2;
+    text-align: center;
+}
+
+.diver {
+    padding: 30px;
+    font-size: 30px;
+}
+
+.diver h4 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.diver p {
+    font-size: 20px;
+}
+
+.subhead {
+    text-align: center;
+}
+
+.body1 {
+    box-sizing: border-box;
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    text-align: center;
+}
+
+.button2 button {
+    border: none;
+    background-color: #1a1a1a;
+    color: red;
+    padding: 30px;
+}
+
+.button2 button h4 {
+    color: white;
+}
+
+.button2 {
+    display: flex;
+}
+
+.whyus {
+    text-align: center;
+
+}
+
+.whyus h3 {
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.whyus h4 {
+    font-size: 30px;
+}
+
+.bulb {
+    display: flex;
+    margin-left: 200px;
+
+}
+
+.soft {
+    background-color: #eee;
+    height: 400px;
+    display: flex;
+
+}
+
+.mob1 {
+    height: 300px;
+    width: 200px;
+    border: 2px solid #eee;
+    background-color: white;
+    border-radius: 0px 0px 25px 25px;
+    margin-bottom: 50px;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.mob1 img {
+    height: 250px;
+    width: 180px;
+    margin-top: 30px;
+}
+
+.mob2 {
+    height: 300px;
+    width: 200px;
+    border: 2px solid #eee;
+    background-color: white;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.mob2 img {
+    height: 250px;
+    width: 190px;
+    margin-top: 30px;
+}
+
+.green {
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    text-align: center;
+    height: 50px;
+    font-size: 15px;
+    width: 200px;
+}
+
+.black {
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+}
+
+.but {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.soft1 {
+    margin-top: 80px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.soft1 h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.soft1 h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.lets {
+    border-radius: 10px;
+    margin-top: -5px;
+    height: 200px;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: brown;
+    color: white;
+
+}
+
+.lets1 {
+    height: 200px;
+    width: auto;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+
+.line {
+    height: 90px;
+    width: 5px;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.lets2 {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.lets2 h2 {
+    margin-left: -400px;
+
+}
+
+.lets2 form button {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.foot1 {
+    padding: 20px;
+    margin-left: 80px;
+}
+
+.foot2 {
+    padding: 20px;
+}
+
+.foot3 {
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.foot1 ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.footer1 {
+    height: 300px;
+    margin-left: 50px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.foot2 ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.foot3 ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+input[type=text],
+select {
+    width: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.subhead h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.subhead h4 {
+    font-size: 25px;
+}
+
+.footer1 h4 {
+    font-size: 20px;
+}
+
+.foot4 p {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.foot4 form {
+    padding: 10px;
+    display: inline-block;
+}
+
+.foot4 {
+    margin-left: 10px;
+}
+
+
+
+.fiel {
+    width: 70px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email],
+select {
+
+    width: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.qwe {
+    height: 30px;
+    width: auto;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.copy {
+    text-align: center;
+}
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="./image/header.png" />
+            <span class="nav-link"><a href="#">
+                    <span id="ham" class="glyphicon glyphicon-menu-hamburger" style="font-size:20px;"></span>
+                </a></span>
+            <div class="nav2">
+                <ul>
+                    <li>
+                    <li><a href="#">
+                            <span class="glyphicon glyphicon-earphone" style="font-size: 30px;"></span>
+                            </ahref>
+                    </li>
+                    <li><a href="" #><span class="glyphicon glyphicon-envelope" style="font-size:30px;"></span></a>
+                    </li>
+                    <li><a href=""><button>GET IN TOUCH</button></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xcLKlPTG97k" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="body1">
+        <div id="imge">
+            <div class="images">
+                <img src="./image/image1.png" />
+                <img src="./image/image3.png" />
+                <img src="./image/image4.png" />
+            </div>
+            <div class="images2">
+                <img src="./image/image5.png" />
+                <img src="./image/image6.png" />
+                <img src="./image/image7.png" style="width:390px;" />
+            </div>
+        </div>
+        <div class="subhead">
+            <h2>WE ARCHITECT WINNING BUSSINESS</h2>
+            <h4>The world's leading Training Agency.</h4>
+            <div class="images3">
+                <img src="./image/image.png" />
+                <img src="./image/image8.png" />
+                <img src="./image/image9.png" />
+                <img src="./image/image10.png" />
+            </div>
+        </div>
+
+        <div class="globe">
+            <h4>OUR CLIENTS</h4>
+            <h5>The world's leading Training Agency.</h5>
+        </div>
+        <div class="logo">
+            <ul>
+                <li> <span id="glyphicon" class="glyphicon glyphicon-chevron-left" style="font-size: 30px;"></span></li>
+                <li><img src="./image/MSCI_BRAND-SPUR.png" /></li>
+                <li><img src="./image/unnamed.png" /></li>
+                <li><img src="./image/800px-SAP_2011_logo.svg.png" /></li>
+                <li><img src="./image/Birla-Sun-Life-Insurance-Logo-1280x720.jpg" /></li>
+                <li><img src="./image/Intel-22nm-Atom-Coming-in-Q4-2013-2.jpg" /></li>
+                <li><img src="./image/illuminati-symbols-vodafone-logo-666.jpg" /></li>
+                <li><img src="./image/pfizer-vector-logo.png" /></li>
+                <li><img src="./image/unnamed.jpg" /></li>
+                <li><span id="glyphicon" class="glyphicon glyphicon-chevron-right"
+                        style="font-size: 30px;display: inline-block;"></span></li>
+            </ul>
+        </div>
+        <div class="range">
+            <div class="diver">
+                <h4>DIVERSE INDUSTRY EXPERIENCE</h4>
+                <p>Our unique diligence approach allows us to<br />
+                    asses technology -enabled companies accross</br>
+                    a wide range of industry sectors.</p>
+                <div class="button2">
+                    <button value="10+">10+<br>
+                        <h4>YEARS OF EXP</h4>
+                    </button>
+                    <button value="200+">200+<br>
+                        <h4>HAPPY CLIENTS</h4>
+                    </button>
+                </div>
+
+            </div>
+            <div class="slid"><img src="./image/sliderange.png" /></div>
+        </div>
+        <div class="whyus">
+            <h3>WHY US ?</h3>
+            <h4>The world's leading Training Agency.</h4>
+            <div class="bulb">
+                <div>
+                    <img src="./image/Untitled-1-Recovered.png" />
+                    <h6>Co-ordination</h6>
+                </div>
+                <div> <img src="./image/Untitled-1-Recovered.png" />
+                    <h6>Differentiation</h6>
+                </div>
+                <div>
+                    <img src="./image/Untitled-1-Recovered.png" />
+                    <h6>Co-ordination</h6>
+                </div>
+                <div> <img src="./image/Untitled-1-Recovered.png" />
+                    <h6>Differentiation</h6>
+                </div>
+                <div>
+                    <div>
+                        <img src="./image/Untitled-1-Recovered.png" />
+                        <h6>Co-ordination</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="soft">
+            <div class="soft1">
+                <h2>SOFTWARE</h2>
+                <h4>Introduction</h4>
+                <p>
+                    Progressively strategize just in time scenarios and compelling<br>
+                    results.intrinsicly parallel task extensive systems whereas <br>
+                    distinctive catalysts for scenarios and compelling results change.
+                </p>
+                <div class="but"> <button class="green">GROWTH CHARTER</button>
+                    <button class="black">TRAINS ON BOARD</button></div>
+            </div>
+
+            <div class="mob1">
+                <img src="./image/mob1.png" />
+            </div>
+            <div class="mob2">
+                <img src="./image/mob2.png" />
+            </div>
+        </div>
+    </div>
+    <div class="lets">
+        <div class="lets1">
+            <h1>LET'S TALK</h1>
+            <h3>+91-9999677947</h3>
+        </div>
+        <div class="line"></div>
+        <div class="lets2">
+            <h2>WRITE US</h2>
+            <form>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <button>SEND</button>
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="foot1">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li>About</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                    <li>Pricing and Licenses</li>
+                </ul>
+
+            </div>
+            <div class="foot2">
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li>Corporate</li>
+                    <li>Institute</li>
+                    <li>Workshops</li>
+                    <li>Residence</li>
+                </ul>
+            </div>
+            <div class="foot3">
+                <h4>SOCIAL</h4>
+                <ul>
+                    <li>Submit to showcase</li>
+                    <li>Samplice magazine</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                </ul>
+
+            </div>
+            <div class="foot4">
+                <p>Subscribe to our newsletters to receive news & <br>
+                    updates.We promise to not spam you, super<br>
+                    promise</p>
+                <form>
+                    <input class="fiel" type="text" placeholder="YOUR FIRST NAME ..." />
+
+                    <input type="email" placeholder="YOUR EMAIL ADDRESS ..." />
+                    <button><span id="qwe" class="glyphicon glyphicon-chevron-right"
+                            style="font-size: 20px;display: inline-block;"></button>
+                </form>
+
+            </div>
+        </div>
+        <div class="copy">
+            COPYRIGHT &copy;KAIZEN TRAINING SOLUTIONS.ALL RIGHTS RESERVED.
+        </div>>
+    </footer>
+
+
+
+</body>
+
+</html>
